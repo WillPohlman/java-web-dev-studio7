@@ -8,5 +8,14 @@ public class Main {
 
         // TODO: Call each CD and DVD method to verify that they work as expected.
 
+        CD myCD = new CD(734003200, "Will's Mix Tape");
+        DVD myDVD = new DVD(1460000000, "Star Wars");
+
+        myCD.spinDisc();
+        myDVD.spinDisc();
+
+        System.out.println("This CD can store " + myCD.getTotalStorageSpace() + " bytes of data");
+        System.out.println("This DVD can store " + myDVD.getTotalStorageSpace() + " bytes of data");
+
     }
 }
